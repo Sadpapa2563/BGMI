@@ -349,7 +349,7 @@ def start_message(message):
 
 
 if __name__ == "__main__":
-    asyncio_thread = Thread(target=start_asyncio_thread, daemon=True)
+    asyncio_thread = thread(target=start_asyncio_thread, daemon=True)
     asyncio_thread.start()
     logging.info("Bot started join @golemxddos...")
     while True:
